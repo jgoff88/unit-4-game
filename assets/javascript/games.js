@@ -32,6 +32,7 @@ $(document).ready(function(){
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             reset();
+            
         }
     });
    
@@ -40,3 +41,5 @@ var reset = function() {
     userTotal = 0;
 
 }
+
+
