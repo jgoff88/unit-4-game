@@ -3,6 +3,17 @@ body {
   background: url("https://wallpapercave.com/wp/wp1822754.jpg") fixed center;
   background-size: auto;
 }
+#title {
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    font-size: 30px;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: rgba(95, 2, 107, 0.774);
+}
 #guess {
     border-radius: 25px;
     background: #73AD21;
