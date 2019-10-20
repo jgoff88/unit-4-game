@@ -1,6 +1,7 @@
 body {
   background-position: center;
   background: url("https://wallpapercave.com/wp/wp1822754.jpg") fixed center;
+  background-size: auto;
 }
 #guess {
     border-radius: 25px;
