@@ -1,8 +1,10 @@
 var compTotal = 22;
 var userTotal= 0;
-var lose = false;
+var wins = 0;
+var losses = 0;
 $(document).ready(function(){
 //Give value to buttons
+    $("#number").text(compTotal);
     $("#crystal0").on('click', function(){
         userTotal += 2;
         console.log("your total:", userTotal);
@@ -22,8 +24,19 @@ $(document).ready(function(){
     $(".buttons").on("click", function() {
         if (userTotal === compTotal) {
             alert("YOU WIN!!");
+            wins++;
+            document.querySelector("#wins").innerHTML = wins;     
+            reset();   
         } else if (userTotal > compTotal) {
             alert("YOU LOSE! TRY AGAIN.");
+            losses++;
+            document.querySelector("#losses").innerHTML = losses;
+            reset();
         }
     });
+   
 });
+var reset = function() {
+    userTotal = 0;
+
+}
