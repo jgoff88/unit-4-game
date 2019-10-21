@@ -7,25 +7,25 @@ $(document).ready(function(){
 //Give value to buttons
     $("#number").text(compTotal);
     $("#crystal0").on('click', function(){
-        randomNumber = Math.floor((Math.random() * 12) + 1)
+        randomNumber = Math.floor((Math.random() * 12) + 1);
         userTotal += parseInt(randomNumber);
         console.log("your total:", userTotal);
         $("#user").text(userTotal);
     });
     $("#crystal1").on('click', function(){
-        randomNumber = Math.floor((Math.random() * 12) + 1)
+        randomNumber = Math.floor((Math.random() * 12) + 1);
         userTotal += parseInt(randomNumber);
         console.log("your total:", userTotal);  
         $("#user").text(userTotal);  
     });
     $("#crystal2").on('click', function(){
-        randomNumber = Math.floor((Math.random() * 12) + 1)
+        randomNumber = Math.floor((Math.random() * 12) + 1);
         userTotal += parseInt(randomNumber);
         console.log("your total:", userTotal);
         $("#user").text(userTotal);    
     });
     $("#crystal3").on('click', function(){
-        randomNumber = Math.floor((Math.random() * 12) + 1)
+        randomNumber = Math.floor((Math.random() * 12) + 1);
         userTotal += parseInt(randomNumber);
         console.log("your total:", userTotal);  
         $("#user").text(userTotal);      
@@ -50,7 +50,7 @@ $(document).ready(function(){
 });
 var reset = function() {
     userTotal = 0;
-
+    var compTotal = Math.floor((Math.random() * 120) + 1);
 }
 
 
